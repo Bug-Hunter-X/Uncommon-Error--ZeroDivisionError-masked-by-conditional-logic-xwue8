@@ -1,0 +1,4 @@
+# Uncommon Error in Python: Masked ZeroDivisionError
+This repository showcases a Python code snippet that exhibits an uncommon error.  The function `function_with_uncommon_error` aims to handle cases where either 'a' or 'b' is zero. However, a subtle flaw exists when both 'a' and 'b' are zero. The 'if a == 0' condition is checked before 'elif b == 0', resulting in the function proceeding without causing a ZeroDivisionError, which would normally be thrown.  However, the function returns an unexpected result instead. This behavior might lead to hard-to-debug errors later in your program.
+
+The solution provided demonstrates a more robust way to handle this scenario, prioritizing error handling and clear logic.
